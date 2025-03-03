@@ -1,0 +1,171 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+  }
+  
+  .container{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr 0.2fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav nav"
+      "sio sio"
+      "text text"
+      "slam1 sisr1"
+      "slam2 sisr2"
+      "footer footer"
+      ;
+    grid-gap: 0.5rem;
+    font-family:"Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color:black;
+    text-align:center;
+    background-image: url(Portfolio/abstrait-bleu-effet-dynamique-lignes_1017-3746.jpg);
+    background-size: cover;
+    margin: -8px;
+  }
+
+  g{
+    font-weight: 700;
+    color:rgb(72, 148, 235);
+  }
+  
+  hr{
+    color:white;
+  }
+  
+  nav{
+    background:#010105;
+    grid-area: nav;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align:center;
+    padding: 0.2em;
+    font-size: 23px;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 3.2em;
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul a li {
+    color: rgb(255, 255, 255);
+  }
+  
+  a{
+    border-bottom: none;
+    text-decoration: none;
+    list-style-type:none;
+    font-weight:500;
+    text-transform: uppercase;
+  }
+  
+  .vertical-line{
+    border-left: 1px solid #ffffff;
+    display: inline-block;
+    height: 20px;
+    margin: 1px;
+  }
+  
+  .sio{
+    grid-area:sio;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+  
+  .text{
+    grid-area:text;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 20px;
+  }
+  
+  .slam1{
+    grid-area:slam1;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 200px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .slam2{
+    grid-area:slam2;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 200px;
+    margin-right: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .slam2 ul li{
+    border-bottom: none;
+    text-decoration: none;
+    list-style-type:none;
+    margin-left: -40px;
+  }
+  
+  .sisr1{
+    grid-area:sisr1;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 10px;
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+  
+  .sisr2{
+    grid-area:sisr2;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 10px;
+    margin-right: 200px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .sisr2 ul li{
+    border-bottom: none;
+    text-decoration: none;
+    list-style-type:none;
+    margin-left: -40px;
+  }
+  
+  footer{
+    grid-area: footer;
+    color: white;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 100%); 
+    font-weight:800;
+    font-size:12px;
+  }
+  

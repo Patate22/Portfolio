@@ -1,0 +1,223 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+  }
+  
+  .container{
+    display:grid;
+    height: 120vh;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr 0.2fr 0.6fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav"
+      "parcour parcour parcour"
+      "BTS barre lycee"
+      "college barre lycee"
+      "college barre lycee"
+      "projet projet projet"
+      "tprojet tprojet tprojet"
+      "footer footer footer"
+      ;
+    grid-gap: 0.5rem;
+    font-family:"Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color:black;
+    text-align:center;
+    margin: -8px;
+    background-color: #010105;
+    background-image: url(Portfolio/abstrait-bleu-effet-dynamique-lignes_1017-3746.jpg);
+    background-size: cover;
+  }
+ 
+  g{
+    font-weight: 700;
+    color:rgb(0, 0, 0);
+  }
+
+  hr{
+    color:rgb(0, 0, 0);
+    width: 250px;
+    border: 3px solid;
+    background-color: #010105;
+    border-radius: 10px;
+  }
+  
+  nav{
+    background:#010105;
+    grid-area: nav;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align:center;
+    padding: 0.2em;
+    font-size: 23px;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 3.2em;
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul a li {
+    color: rgb(255, 255, 255);
+  }
+  
+  a{
+    border-bottom: none;
+    text-decoration: none;
+    list-style-type:none;
+    font-weight:500;
+    text-transform: uppercase;
+  }
+
+  .etablissement{
+    font-style: italic;
+  }
+
+  .vertical-line{
+    border-left: 1px solid #ffffff;
+    display: inline-block;
+    height: 20px;
+    margin: 1px;
+  }
+  
+  .parcour{
+    grid-area:parcour;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .college{
+    grid-area:college;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 300px;
+    margin-bottom: 30px;
+    margin-right: -15px;
+    margin-top: 140px;
+  }
+
+  .college h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .lycee{
+    grid-area:lycee;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-right: 300px;
+    margin-left: -15px;
+    margin-top: 150px;
+    margin-bottom: 170px;
+  }
+
+  .lycee ul{
+    margin-right: 35px;
+  }
+  .lycee ul li{
+    text-decoration: none;
+    list-style-type:none;
+  }
+
+  .lycee h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .BTS{
+    grid-area:BTS;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 300px;
+    margin-top: 30px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+  }
+
+  .BTS h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .barre{
+    grid-area:barre;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    border-radius: 50px;
+    margin-top: 50px;
+    width: 35px;
+    height: 500px;
+    margin-left: 27px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(18,114,163,0.9) 20%, rgba(28,176,255,0.9) 50%, rgba(18,114,163,0.8981793400954132) 80%, rgba(0,0,0,0.9) 100%); 
+  }
+  
+  .vide1{
+    grid-area:vide1;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  .vide2{
+    grid-area:vide2;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  .vide3{
+    grid-area:vide3;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  
+  .projet{
+    grid-area:projet;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .tprojet{
+    grid-area:tprojet;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(0, 0, 0);
+    background: rgba(237, 242, 255);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+  }
+
+  .tprojet p{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  footer{
+    grid-area: footer;
+    color: white;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 100%); 
+    font-weight:800;
+    font-size:12px;
+  }

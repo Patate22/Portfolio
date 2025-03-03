@@ -1,0 +1,108 @@
+:root{
+    --main-padding:2px;
+  }
+  
+  .container{
+    display:grid;
+    height:99.5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.1fr;
+    grid-template-areas:
+      "nav"
+      "bienvenue"
+      "footer"
+      ;
+    grid-gap: 0rem;
+    font-family:"Inter", sans-serif;
+    font-weight:800;
+    font-size:12px;
+    color:black;
+    text-align:center;
+    background-image: url(Portfolio/freepik-export-20241208140440rheD.jpeg);
+    background-size: cover;
+    margin: -8px;
+  }
+  
+  hr{
+    color:white;
+  }
+  
+  nav{
+    background:#010105;
+    grid-area: nav;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align:center;
+    padding: 0.2em;
+    font-size: 23px;
+  }
+  
+  nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 3.2em;
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul a li {
+    color: rgb(255, 255, 255);
+  }
+  
+  a{
+    border-bottom: none;
+    text-decoration: none;
+    list-style-type:none;
+    font-weight:500;
+    text-transform: uppercase;
+  }
+
+  .vertical-line{
+    border-left: 1px solid #ffffff;
+    display: inline-block;
+    height: 20px;
+    margin: 1px;
+  }
+  
+  .bienvenue{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 100%); 
+    grid-area: bienvenue;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    color:rgb(164, 186, 247);
+    font-size: 40px;
+    font-weight:500;
+    line-height: 5px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(99, 99, 255), 0 0 0.2em rgb(13, 13, 48);
+  }
+
+  .bienvenue h2{
+    font-size:80px;
+    font-weight:800;
+    color:white;
+    margin-top: 270px;
+  }
+
+  .bienvenue button{
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 70px;
+    width: 450px;
+    background-color: white;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    text-shadow: rgb(164, 186, 247) 1px 1px;
+    cursor: pointer;
+  }
+  
+  footer{
+    grid-area: footer;
+    color: white;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 100%); 
+  }
+  

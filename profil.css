@@ -1,0 +1,194 @@
+:root{
+  --main-radius:5px;
+  --main-padding:5px;
+}
+
+.container{
+  display:grid;
+  height:100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 1.5fr 1fr 0.1fr;
+  grid-template-areas:
+    "nav nav"
+    "profil profil"
+    "informations curriculumvitae"
+    "competence competence"
+    "footer footer"
+    ;
+  grid-gap: 0.5rem;
+  font-family:"Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color:black;
+  text-align:center;
+  background-image: url(Portfolio/photo-1597733336794-12d05021d510.avif);
+  margin: -8px;
+}
+
+/*Modification du texte*/
+hr{
+  color:rgb(0, 0, 0);
+  width: 300px;
+  border: 3px solid;
+  background-color: #010105;
+  border-radius: 10px;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+g{
+  font-weight: 700;
+  color:rgb(72, 148, 235);
+}
+
+/*Paramètre de la barre de Navigation*/
+nav{
+  background:#010105;
+  grid-area: nav;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  text-align:center;
+  padding: 0.2em;
+  font-size: 23px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 3.2em;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul a li {
+  color: rgb(255, 255, 255);
+}
+
+a{
+  border-bottom: none;
+  text-decoration: none;
+  list-style-type:none;
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+.vertical-line{
+  border-left: 1px solid #ffffff;
+  display: inline-block;
+  height: 20px;
+  margin: 1px;
+}
+
+/*Paramètre du Titre*/
+.profil{
+  grid-area: profil;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 300px;
+  margin-right: 300px;
+  color:rgb(0, 0, 0);
+  background: rgb(237, 242, 255);
+}
+
+/*Paramètre */
+.informations{
+  grid-area: informations;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 200px;
+  color:rgb(0, 0, 0);
+  background: rgb(237, 242, 255);
+}
+
+.informations p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*Paramètre du curriculumvitae avec les 2 boutons*/
+.curriculumvitae{
+  grid-area: curriculumvitae;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-right: 200px;
+  color:rgb(0, 0, 0);
+  background: rgba(237, 242, 255);
+}
+
+.curriculumvitae p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.cv{
+  color:#010105;
+  margin-top: 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+  height: 70px;
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  font-size:20px;
+  text-shadow: rgb(164, 186, 247) 1px 1px;
+  cursor: pointer;
+}
+
+.lettre{
+  color:#010105;
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 70px;
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+  font-size:20px;
+  text-shadow: rgb(164, 186, 247) 1px 1px;
+  cursor: pointer;
+}
+
+/*Paramètre des compétences et certifications*/
+.competence{
+  grid-area: competence;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  margin-left: 200px;
+  margin-right: 200px;
+  color:rgb(0, 0, 0);
+  background: rgb(237, 242, 255);
+}
+
+.competence hr{
+  width: 500px;
+}
+
+.competence ul{
+  list-style-type: none;
+  display:inline-block;
+}
+
+.competence ul li{
+  margin-top: 25px;
+  font-size: 25px;
+  text-align: start;
+}
+
+footer{
+  grid-area: footer;
+  color: white;
+  border-radius:var(--main-radius);
+  padding-top: var(--main-padding);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 100%); 
+  font-weight:800;
+  font-size:12px;
+}
